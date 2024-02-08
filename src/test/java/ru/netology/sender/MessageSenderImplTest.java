@@ -1,27 +1,22 @@
-package ru.netology;
+package ru.netology.sender;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
 import ru.netology.geo.GeoService;
-import ru.netology.geo.GeoServiceImpl;
 import ru.netology.i18n.LocalizationService;
-import ru.netology.i18n.LocalizationServiceImpl;
-import ru.netology.sender.MessageSenderImpl;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
-import static ru.netology.GeoServiceImplMock.MOSCOW_IP;
-import static ru.netology.GeoServiceImplMock.NEW_YORK_IP;
+import static ru.netology.sender.GeoServiceImplMock.MOSCOW_IP;
+import static ru.netology.sender.GeoServiceImplMock.NEW_YORK_IP;
 
 @ExtendWith(MockitoExtension.class)
 class MessageSenderImplTest {

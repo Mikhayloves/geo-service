@@ -11,9 +11,9 @@ class GeoServiceImplTest {
 
     @Test
     void byIp() {
-        Location location = new Location("Moscow", Country.RUSSIA, "Lenina", 15);
+        Location location = new Location("Moscow", Country.RUSSIA, null, 0);
         GeoServiceImpl geoService = new GeoServiceImpl();
-        Location result = geoService.byIp(MOSCOW_IP);
+        Location result = geoService.byIp("172.");
         assertEquals(location,result);
     }
 }
