@@ -1,4 +1,4 @@
-package ru.netology.sender;
+package ru.netology.test.sender;
 
 import ru.netology.entity.Country;
 import ru.netology.i18n.LocalizationService;
